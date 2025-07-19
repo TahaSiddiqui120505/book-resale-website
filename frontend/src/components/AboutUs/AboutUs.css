@@ -1,0 +1,130 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #fae9b3 0%, #f7e7a1 100%);
+}
+
+.about_main {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about_text {
+  max-width: 600px;
+}
+
+.about_text h1 {
+  font-size: 6vw;
+  margin-bottom: 10px;
+}
+
+.about_text h1 span {
+  color: #fac031;
+  font-family: 'MV Boli', cursive;
+}
+
+.about_text h3 {
+  font-size: 2vw;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.about_text p {
+  font-size: 2.5vh;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.about_points {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.about_points li {
+  background: #fff;
+  border-left: 5px solid #fac031;
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  font-size: 2.3vh;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about_points li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.about_bottom {
+  background: #fff;
+  padding: 18px 20px;
+  border-radius: 15px;
+  font-size: 2.5vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  color: #222;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about_bottom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.image img {
+  margin-top: 19vh;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.image img:hover {
+  transform: scale(1.03);
+}
+
+/* Scroll Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about_main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about_text h1,
+  .about_text h3 {
+    font-size: 6vw;
+  }
+
+  .about_text {
+    padding: 0 10px;
+  }
+
+  .about_points li {
+    text-align: left;
+  }
+}

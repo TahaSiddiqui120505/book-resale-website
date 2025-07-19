@@ -1,0 +1,130 @@
+#how-to-buy {
+  padding: 100px 60px;
+  background: linear-gradient(to bottom, #fcebcf 0%, #fae9b3 100%);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.buy-header h2 {
+  font-size: 5vw;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.buy-header h2 span {
+  color: #fac031;
+  font-family: 'MV Boli', cursive;
+}
+
+.buy-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.buy-header::before {
+  content: "03";
+  position: absolute;
+  font-size: 2.5vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: 15%;
+  top: 13%;
+}
+
+.buy-steps {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.buy-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border-radius: 50px;
+  padding: 40px 30px;
+  width: 280px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 6px solid #fac031;
+}
+
+.buy-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+.buy-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  animation: float2 4s ease-in-out infinite;
+}
+
+.buy-card h3 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.buy-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Animation */
+@keyframes float2 {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .buy-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.capsule-sell-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  margin-top: 50px;
+}
+
+.capsule-sell-btn {
+  position: relative;
+  display: inline-block;
+  padding: 18px 50px;
+  border-radius: 80px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 15px rgba(255, 136, 0, 0.3);
+  border: 1px solid rgba(255, 136, 0, 0.3);
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  perspective: 1000px;
+}
+
+.glow-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff9d00;
+  text-shadow: 0 0 6px rgba(255, 157, 0, 0.5);
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.capsule-sell-btn:hover {
+  box-shadow: 0 0 25px rgba(255, 157, 0, 0.7);
+  transform: scale(1.05);
+}

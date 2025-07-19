@@ -1,0 +1,147 @@
+#how-to-sell {
+  padding: 100px 60px;
+  background: linear-gradient(to bottom, #ffecd2 0%, #fcebcf 100%);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.buy-sell-section .blob3 {
+  position: absolute;
+  top: 50vh;
+  right: 2vh;
+  width: 300px;
+  height: 300px;
+  background: #ff7043;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.sell-header h2 {
+  font-size: 5vw;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.sell-header h2 span {
+  color: #fac031;
+  font-family: mv boli;
+}
+
+.sell-header::before {
+  content: "02";
+  position: absolute;
+  font-size: 2.5vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: 12%;
+  top: 10%;
+}
+
+.sell-header p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+}
+
+.sell-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.sell-card {
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 40px 30px;
+  width: 280px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.sell-card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 12px 100px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto 20px;
+  background: #fff5d6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: float 4s ease-in-out infinite;
+}
+
+.icon-box img {
+  width: 50px;
+  height: 50px;
+}
+
+.sell-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.sell-card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.capsule-sell-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  margin-top: 50px;
+}
+
+.capsule-sell-btn {
+  position: relative;
+  display: inline-block;
+  padding: 18px 50px;
+  border-radius: 80px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 15px rgba(255, 136, 0, 0.3);
+  border: 1px solid rgba(255, 136, 0, 0.3);
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  perspective: 1000px;
+}
+
+.glow-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff9d00;
+  text-shadow: 0 0 6px rgba(255, 157, 0, 0.5);
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.capsule-sell-btn:hover {
+  box-shadow: 0 0 25px rgba(255, 157, 0, 0.7);
+  transform: scale(1.05);
+}
+
