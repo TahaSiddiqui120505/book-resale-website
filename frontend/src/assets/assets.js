@@ -359,6 +359,7 @@ export const books = [
   { id: "aids-sem2-010", name: 'ENGINEERING PHYSICS 2', image: Phy1, price: 85, branch: "aids", sem: "sem2" },
   { id: "aids-sem2-011", name: 'ELECTRICAL MACHINES', image: bee1, price: 115, branch: "aids", sem: "sem2" },
   { id: "aids-sem2-012", name: 'ENGINEERING CHEMISTRY 2', image: Chem1, price: 98, branch: "aids", sem: "sem2" },
+  
 
   // CSE Sem 1
   { id: "cse-sem1-013", name: 'ENGINEERING MATHEMATICS 2', image: Maths1, price: 120, branch: "cse", sem: "sem1" },

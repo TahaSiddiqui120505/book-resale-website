@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Navbar.css';
 import { FaShoppingCart, FaSearch } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
+import {Link} from 'react-router-dom';
+import { StoreContext } from '../../context/StoreContext';
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
 
   const [menu,setMenu] = useState("hero-wrapper")
+    const {getTotalCartAmount} = useContext(StoreContext)
 
   return (
     <div id="nav">
@@ -85,10 +88,10 @@ const Navbar = () => {
       <div id="nav-right">
         <FaSearch className="nav-icon" title="Search" />
         <div className='nav-cart'>
-          <FaShoppingCart className="nav-icon" title="Cart" />
-          <div className='dot'></div>
+          <Link to='/cart'><FaShoppingCart className="nav-icon" title="Cart" /></Link>
+          <div className={getTotalCartAmount()===0?"":"dot"}></div>
         </div>
-        <button className="login-btn">Login</button>
+        <button onClick={()=>setShowLogin(true)} className="login-btn">Sign In</button>
       </div>
     </div>
   );
