@@ -35,6 +35,9 @@ import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
 
+//Sell
+import upload_area from './upload_area.png'
+
 export const assets = {
     basket_icon,
     search_icon,
@@ -63,7 +66,10 @@ export const assets = {
     //semester1
     Chem1, Phy1, Maths1, C1, pce2, bee1, Mechanics1,
     //semester2
-    pce2
+    pce2,
+
+    //sell
+    upload_area
 }
 
 // export const explore_books_list = [

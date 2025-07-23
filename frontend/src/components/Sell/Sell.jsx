@@ -1,5 +1,6 @@
 import React from 'react';
 import './Sell.css';
+import { Link } from 'react-router-dom';
 
 const Sell = () => {
   return (
@@ -36,9 +37,9 @@ const Sell = () => {
       </div>
 
       <div className="capsule-sell-wrapper">
-        <a href="/sell/index.html" className="capsule-sell-btn">
-          <span className="glow-text">Start Selling</span>
-        </a>
+          <Link to="/sell" className="capsule-sell-btn">
+            <span className="glow-text">Start Selling</span>
+          </Link>
       </div>
 
       <div className="buy-sell-section">

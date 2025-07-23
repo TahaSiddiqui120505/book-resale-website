@@ -1,0 +1,10 @@
+.app-content{
+    display: flex;
+    padding-top: 80px;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

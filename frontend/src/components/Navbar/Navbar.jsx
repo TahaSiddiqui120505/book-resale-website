@@ -2,14 +2,20 @@ import React, { useContext, useState } from 'react';
 import './Navbar.css';
 import { FaShoppingCart, FaSearch } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
+import { assets } from '../../assets/assets';
 
 const Navbar = ({setShowLogin}) => {
 
   const [menu,setMenu] = useState("hero-wrapper")
-    const {getTotalCartAmount} = useContext(StoreContext)
-
+    const {getTotalCartAmount, token, setToken} = useContext(StoreContext)
+    const navigate = useNavigate();
+  const logout = () => {
+    localStorage.removeItem("token");
+    setToken("");
+    navigate("/")
+  }
   return (
     <div id="nav">
       {/* Left: Logo + Name */}
@@ -91,7 +97,15 @@ const Navbar = ({setShowLogin}) => {
           <Link to='/cart'><FaShoppingCart className="nav-icon" title="Cart" /></Link>
           <div className={getTotalCartAmount()===0?"":"dot"}></div>
         </div>
-        <button onClick={()=>setShowLogin(true)} className="login-btn">Sign In</button>
+         {!token?<button className='signbutton' onClick={()=>setShowLogin(true)}>sign in</button>
+            :<div className='navbar-profile'>
+              <img src={assets.profile_icon} className='white-filter' alt="" />
+              <ul className="nav-profile-dropdown">
+                <li ><img src={assets.bag_icon} alt="" /><p>Orders</p></li>
+                <hr />
+                <li onClick={logout}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
+              </ul>
+              </div>}
       </div>
     </div>
   );
