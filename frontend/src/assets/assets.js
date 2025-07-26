@@ -116,7 +116,7 @@ export const explore_books_list = [
   {
     menu_name: "Computer Engineering",
     menu_image: "/images/cse.png", // Add your custom image for CSE
-    branch: "cse",
+    branch: "comps",
   },
   {
     menu_name: "Electrical Engineering",
@@ -368,18 +368,18 @@ export const books = [
   
 
   // CSE Sem 1
-  { id: "cse-sem1-013", name: 'ENGINEERING MATHEMATICS 2', image: Maths1, price: 120, branch: "cse", sem: "sem1" },
-  { id: "cse-sem1-014", name: 'ENGINEERING MECHANICS', image: Mechanics1, price: 100, branch: "cse", sem: "sem1" },
-  { id: "cse-sem1-015", name: 'C Programming', image: C1, price: 90, branch: "cse", sem: "sem1" },
-  { id: "cse-sem1-016", name: 'ENGINEERING PHYSICS 1', image: Phy1, price: 80, branch: "cse", sem: "sem1" },
-  { id: "cse-sem1-017", name: 'BASIC ELECTRICAL ENGINEERING', image: bee1, price: 110, branch: "cse", sem: "sem1" },
-  { id: "cse-sem1-018", name: 'ENGINEERING CHEMISTRY 1', image: Chem1, price: 95, branch: "cse", sem: "sem1" },
+  { id: "comps-sem1-013", name: 'ENGINEERING MATHEMATICS 2', image: Maths1, price: 120, branch: "comps", sem: "sem1" },
+  { id: "comps-sem1-014", name: 'ENGINEERING MECHANICS', image: Mechanics1, price: 100, branch: "comps", sem: "sem1" },
+  { id: "comps-sem1-015", name: 'C Programming', image: C1, price: 90, branch: "comps", sem: "sem1" },
+  { id: "comps-sem1-016", name: 'ENGINEERING PHYSICS 1', image: Phy1, price: 80, branch: "comps", sem: "sem1" },
+  { id: "comps-sem1-017", name: 'BASIC ELECTRICAL ENGINEERING', image: bee1, price: 110, branch: "comps", sem: "sem1" },
+  { id: "comps-sem1-018", name: 'ENGINEERING CHEMISTRY 1', image: Chem1, price: 95, branch: "comps", sem: "sem1" },
 
   // CSE Sem 2
-  { id: "cse-sem2-019", name: 'ENGINEERING MATHEMATICS 2', image: Maths1, price: 130, branch: "cse", sem: "sem2" },
-  { id: "cse-sem2-020", name: 'STRENGTH OF MATERIALS', image: Mechanics1, price: 105, branch: "cse", sem: "sem2" },
-  { id: "cse-sem2-021", name: 'DATA STRUCTURES', image: C1, price: 100, branch: "cse", sem: "sem2" },
-  { id: "cse-sem2-022", name: 'ENGINEERING PHYSICS 2', image: Phy1, price: 85, branch: "cse", sem: "sem2" },
-  { id: "cse-sem2-023", name: 'ELECTRICAL MACHINES', image: bee1, price: 115, branch: "cse", sem: "sem2" },
-  { id: "cse-sem2-024", name: 'ENGINEERING CHEMISTRY 2', image: Chem1, price: 98, branch: "cse", sem: "sem2" }
+  { id: "comps-sem2-019", name: 'ENGINEERING MATHEMATICS 2', image: Maths1, price: 130, branch: "comps", sem: "sem2" },
+  { id: "comps-sem2-020", name: 'STRENGTH OF MATERIALS', image: Mechanics1, price: 105, branch: "comps", sem: "sem2" },
+  { id: "comps-sem2-021", name: 'DATA STRUCTURES', image: C1, price: 100, branch: "comps", sem: "sem2" },
+  { id: "comps-sem2-022", name: 'ENGINEERING PHYSICS 2', image: Phy1, price: 85, branch: "comps", sem: "sem2" },
+  { id: "comps-sem2-023", name: 'ELECTRICAL MACHINES', image: bee1, price: 115, branch: "comps", sem: "sem2" },
+  { id: "comps-sem2-024", name: 'ENGINEERING CHEMISTRY 2', image: Chem1, price: 98, branch: "comps", sem: "sem2" }
 ];

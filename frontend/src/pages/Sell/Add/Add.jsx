@@ -8,7 +8,7 @@ const Add = ({url}) => {
       const [image,setImage] = useState(false);
           const [data,setData] = useState({
         name:"",
-        sem:"Semester 1",
+        sem:"sem 1",
         branch:"aids",
         price:"",
     })
@@ -31,7 +31,7 @@ const Add = ({url}) => {
         if (response.data.success) {
             setData({
               name:"",
-              sem:"Semester 1",
+              sem:"sem1",
               branch:"aids",
               price:"",
             })
@@ -65,14 +65,14 @@ const Add = ({url}) => {
               name="sem"
                 value={data.sem}
             >
-              <option value="Semester 1">Semester 1</option>
-              <option value="Semester 2">Semester 2</option>
-              <option value="Semester 3">Semester 3</option>
-              <option value="Semester 4">Semester 4</option>
-              <option value="Semester 5">Semester 5</option>
-              <option value="Semester 6">Semester 6</option>
-              <option value="Semester 7">Semester 7</option>
-              <option value="Semester 8">Semester 8</option>
+              <option value="sem1">Semester 1</option>
+              <option value="sem2">Semester 2</option>
+              <option value="sem3">Semester 3</option>
+              <option value="sem4">Semester 4</option>
+              <option value="sem5">Semester 5</option>
+              <option value="sem6">Semester 6</option>
+              <option value="sem7">Semester 7</option>
+              <option value="sem8">Semester 8</option>
             </select>
           </div>
 
